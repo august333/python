@@ -8,11 +8,11 @@ window = Tk()
 window.withdraw()
 # 1. Ask the user if they know how to write code.
 res = simpledialog.askstring(title=window, prompt="Do you know how to write code?")
+print(res)
 # 2. If they say "yes", tell them they will rule the world in a message box pop-up.
-if res == 'yes' or 'Yes':
+if res == 'yes' or res == 'Yes':
     messagebox.showinfo(message="You will rule the world")
-# 3. Otherwise, tell them to sign up for classes at The League in an error box pop-up.
-elif res == 'no':
-    messagebox.showinfo(message="Sign up for classes at the League!")
+if res == 'no' or res == 'No':
+    messagebox.showerror(message='Sign up for classes at The League!')
 # Run the window's .mainloop() method
 window.mainloop()
