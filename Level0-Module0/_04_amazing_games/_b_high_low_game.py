@@ -15,17 +15,21 @@ if __name__ == '__main__':
 i = 0
 for i in range(10):
 # 4. Ask the user for a guess using a pop-up window, and save their response
-    res = simpledialog.askstring(prompt= 'Guess a number')
+    res = simpledialog.askstring(title=window, prompt= 'Guess a number from 1-100')
+    x = int(res)
         # 5. If the guess is correct
             # 6. Win. Use 'sys.exit(0)' to end the program
-    if res == random_num:
+    if x == random_num:
+        messagebox.showinfo(title=window, message= "You win!")
         sys.exit(0)
         # 7. if the guess is high
             # 8. Tell them it's too high
-    if res ==
+    if x > random_num:
+        messagebox.showinfo(message="Your guess is too high. Guess again.")
         # 9. Else if the guess is low
             # 10. Tell them it's too low
-
-    #11. Outside of the loop, tell the user they lost
-
-    window.mainloop()
+    elif x < random_num:
+        messagebox.showinfo(message="Your guess is too low. Guess again.")
+#11. Outside of the loop, tell the user they lost
+messagebox.showinfo(message="You lost!")
+window.mainloop()

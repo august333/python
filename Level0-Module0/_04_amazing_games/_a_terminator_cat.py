@@ -29,7 +29,6 @@ class Eye:
         self.eye.goto(self.x, self.y)
         self.eye.circle(radius=self.radius, steps=20)
         self.eye.end_fill()
-
 # ====================== DO NOT EDIT THE CODE ABOVE ===========================
 
 
@@ -70,7 +69,6 @@ if __name__ == '__main__':
     # 4. Set the turtle color and pen color to red (or any color you want)
     #    using .color('red', 'red')
     turtle_six.color('red')
-
     # 5. Set the turtle width to 0 so no outlines are drawn
     turtle_six.width(0)
     # 6. Set the turtle speed to 0 (fastest)

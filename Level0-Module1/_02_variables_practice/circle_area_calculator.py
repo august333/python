@@ -12,23 +12,24 @@ if __name__ == '__main__':
     window.withdraw()
     
     # Ask the user for the radius in pixels and store it in a variable
-    # simpledialog.askinteger()
-    
+    r = simpledialog.askinteger(title=window, prompt="Enter a number.")
+    ra = int(r)
     # Make a new turtle
-    
+    turtle_seven = turtle.Turtle()
     # Have your turtle draw a circle with the correct radius
-    # my_turtle.circle()
+    turtle_seven.circle(ra)
 
     # Call the turtle .penup() method
-
+    turtle_seven.penup()
     # Move your turtle to a new x,y position using .goto()
-
+    turtle_seven.goto(32, 33)
     # Calculate the area of your circle and store it in a variable
     # Hint, you can use math.pi
-    
+    area = math.pi
     # Write the area of your circle using the turtle .write() method
-    # my_turtle.write(arg="area = " + str(area), move=True, align='left', font=('Arial',8,'normal'))
+    turtle_seven.write(arg="area = " + str(area), move=True, align='left', font=('Arial', 8, 'normal'))
 
     # Hide your turtle
 
     # Call turtle.done()
+    turtle.done()
