@@ -6,7 +6,7 @@ Processing Demo
 # shapes very easily. Lets do a quick example:
 def setup():
     # The size(width, height) function creates a window with
-    # the specified with and height 
+    # the specified width and height
     size(800, 600)
 
 
